@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../" data-mode="auto" data-theme="dark" class="fontawesome-i2svg-active fontawesome-i2svg-complete"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="codex" name="keywords">
+<title>List of named colors — Matplotlib 3.9.2 documentation</title>
+<script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+
+<style type="text/css">:host,:root{--fa-font-solid:normal 900 1em/1 "Font Awesome 6 Solid";--fa-font-regular:normal 400 1em/1 "Font Awesome 6 Regular";--fa-font-light:normal 300 1em/1 "Font Awesome 6 Light";--fa-font-thin:normal 100 1em/1 "Font Awesome 6 Thin";--fa-font-duotone:normal 900 1em/1 "Font Awesome 6 Duotone";--fa-font-sharp-solid:normal 900 1em/1 "Font Awesome 6 Sharp";--fa-font-sharp-regular:normal 400 1em/1 "Font Awesome 6 Sharp";--fa-font-sharp-light:normal 300 1em/1 "Font Awesome 6 Sharp";--fa-font-sharp-thin:normal 100 1em/1 "Font Awesome 6 Sharp";--fa-font-brands:normal 400 1em/1 "Font Awesome 6 Brands"}svg:not(:host).svg-inline--fa,svg:not(:root).svg-inline--fa{overflow:visible;box-sizing:content-box}.svg-inline--fa{display:var(--fa-display,inline-block);height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-2xs{vertical-align:.1em}.svg-inline--fa.fa-xs{vertical-align:0}.svg-inline--fa.fa-sm{vertical-align:-.0714285705em}.svg-inline--fa.fa-lg{vertical-align:-.2em}.svg-inline--fa.fa-xl{vertical-align:-.25em}.svg-inline--fa.fa-2xl{vertical-align:-.3125em}.svg-inline--fa.fa-pull-left{margin-right:var(--fa-pull-margin,.3em);width:auto}.svg-inline--fa.fa-pull-right{margin-left:var(--fa-pull-margin,.3em);width:auto}.svg-inline--fa.fa-li{width:var(--fa-li-width,2em);top:.25em}.svg-inline--fa.fa-fw{width:var(--fa-fw-width,1.25em)}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:var(--fa-counter-background-color,#ff253a);border-radius:var(--fa-counter-border-radius,1em);box-sizing:border-box;color:var(--fa-inverse,#fff);line-height:var(--fa-counter-line-height,1);max-width:var(--fa-counter-max-width,5em);min-width:var(--fa-counter-min-width,1.5em);overflow:hidden;padding:var(--fa-counter-padding,.25em .5em);right:var(--fa-right,0);text-overflow:ellipsis;top:var(--fa-top,0);-webkit-transform:scale(var(--fa-counter-scale,.25));transform:scale(var(--fa-counter-scale,.25));-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:var(--fa-bottom,0);right:var(--fa-right,0);top:auto;-webkit-transform:scale(var(--fa-layers-scale,.25));transform:scale(var(--fa-layers-scale,.25));-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:var(--fa-bottom,0);left:var(--fa-left,0);right:auto;top:auto;-webkit-transform:scale(var(--fa-layers-scale,.25));transform:scale(var(--fa-layers-scale,.25));-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{top:var(--fa-top,0);right:var(--fa-right,0);-webkit-transform:scale(var(--fa-layers-scale,.25));transform:scale(var(--fa-layers-scale,.25));-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:var(--fa-left,0);right:auto;top:var(--fa-top,0);-webkit-transform:scale(var(--fa-layers-scale,.25));transform:scale(var(--fa-layers-scale,.25));-webkit-transform-origin:top left;transform-origin:top left}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-2xs{font-size:.625em;line-height:.1em;vertical-align:.225em}.fa-xs{font-size:.75em;line-height:.0833333337em;vertical-align:.125em}.fa-sm{font-size:.875em;line-height:.0714285718em;vertical-align:.0535714295em}.fa-lg{font-size:1.25em;line-height:.05em;vertical-align:-.075em}.fa-xl{font-size:1.5em;line-height:.0416666682em;vertical-align:-.125em}.fa-2xl{font-size:2em;line-height:.03125em;vertical-align:-.1875em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:var(--fa-li-margin,2.5em);padding-left:0}.fa-ul>li{position:relative}.fa-li{left:calc(var(--fa-li-width,2em) * -1);position:absolute;text-align:center;width:var(--fa-li-width,2em);line-height:inherit}.fa-border{border-color:var(--fa-border-color,#eee);border-radius:var(--fa-border-radius,.1em);border-style:var(--fa-border-style,solid);border-width:var(--fa-border-width,.08em);padding:var(--fa-border-padding,.2em .25em .15em)}.fa-pull-left{float:left;margin-right:var(--fa-pull-margin,.3em)}.fa-pull-right{float:right;margin-left:var(--fa-pull-margin,.3em)}.fa-beat{-webkit-animation-name:fa-beat;animation-name:fa-beat;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,ease-in-out);animation-timing-function:var(--fa-animation-timing,ease-in-out)}.fa-bounce{-webkit-animation-name:fa-bounce;animation-name:fa-bounce;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,cubic-bezier(.28,.84,.42,1));animation-timing-function:var(--fa-animation-timing,cubic-bezier(.28,.84,.42,1))}.fa-fade{-webkit-animation-name:fa-fade;animation-name:fa-fade;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1));animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1))}.fa-beat-fade{-webkit-animation-name:fa-beat-fade;animation-name:fa-beat-fade;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1));animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1))}.fa-flip{-webkit-animation-name:fa-flip;animation-name:fa-flip;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,ease-in-out);animation-timing-function:var(--fa-animation-timing,ease-in-out)}.fa-shake{-webkit-animation-name:fa-shake;animation-name:fa-shake;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,linear);animation-timing-function:var(--fa-animation-timing,linear)}.fa-spin{-webkit-animation-name:fa-spin;animation-name:fa-spin;-webkit-animation-delay:var(--fa-animation-delay,0s);animation-delay:var(--fa-animation-delay,0s);-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,2s);animation-duration:var(--fa-animation-duration,2s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,linear);animation-timing-function:var(--fa-animation-timing,linear)}.fa-spin-reverse{--fa-animation-direction:reverse}.fa-pulse,.fa-spin-pulse{-webkit-animation-name:fa-spin;animation-name:fa-spin;-webkit-animation-direction:var(--fa-animation-direction,normal);animation-direction:var(--fa-animation-direction,normal);-webkit-animation-duration:var(--fa-animation-duration,1s);animation-duration:var(--fa-animation-duration,1s);-webkit-animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-iteration-count:var(--fa-animation-iteration-count,infinite);-webkit-animation-timing-function:var(--fa-animation-timing,steps(8));animation-timing-function:var(--fa-animation-timing,steps(8))}@media (prefers-reduced-motion:reduce){.fa-beat,.fa-beat-fade,.fa-bounce,.fa-fade,.fa-flip,.fa-pulse,.fa-shake,.fa-spin,.fa-spin-pulse{-webkit-animation-delay:-1ms;animation-delay:-1ms;-webkit-animation-duration:1ms;animation-duration:1ms;-webkit-animation-iteration-count:1;animation-iteration-count:1;-webkit-transition-delay:0s;transition-delay:0s;-webkit-transition-duration:0s;transition-duration:0s}}@-webkit-keyframes fa-beat{0%,90%{-webkit-transform:scale(1);transform:scale(1)}45%{-webkit-transform:scale(var(--fa-beat-scale,1.25));transform:scale(var(--fa-beat-scale,1.25))}}@keyframes fa-beat{0%,90%{-webkit-transform:scale(1);transform:scale(1)}45%{-webkit-transform:scale(var(--fa-beat-scale,1.25));transform:scale(var(--fa-beat-scale,1.25))}}@-webkit-keyframes fa-bounce{0%{-webkit-transform:scale(1,1) translateY(0);transform:scale(1,1) translateY(0)}10%{-webkit-transform:scale(var(--fa-bounce-start-scale-x,1.1),var(--fa-bounce-start-scale-y,.9)) translateY(0);transform:scale(var(--fa-bounce-start-scale-x,1.1),var(--fa-bounce-start-scale-y,.9)) translateY(0)}30%{-webkit-transform:scale(var(--fa-bounce-jump-scale-x,.9),var(--fa-bounce-jump-scale-y,1.1)) translateY(var(--fa-bounce-height,-.5em));transform:scale(var(--fa-bounce-jump-scale-x,.9),var(--fa-bounce-jump-scale-y,1.1)) translateY(var(--fa-bounce-height,-.5em))}50%{-webkit-transform:scale(var(--fa-bounce-land-scale-x,1.05),var(--fa-bounce-land-scale-y,.95)) translateY(0);transform:scale(var(--fa-bounce-land-scale-x,1.05),var(--fa-bounce-land-scale-y,.95)) translateY(0)}57%{-webkit-transform:scale(1,1) translateY(var(--fa-bounce-rebound,-.125em));transform:scale(1,1) translateY(var(--fa-bounce-rebound,-.125em))}64%{-webkit-transform:scale(1,1) translateY(0);transform:scale(1,1) translateY(0)}100%{-webkit-transform:scale(1,1) translateY(0);transform:scale(1,1) translateY(0)}}@keyframes fa-bounce{0%{-webkit-transform:scale(1,1) translateY(0);transform:scale(1,1) translateY(0)}10%{-webkit-transform:scale(var(--fa-bounce-start-scale-x,1.1),var(--fa-bounce-start-scale-y,.9)) translateY(0);transform:scale(var(--fa-bounce-start-scale-x,1.1),var(--fa-bounce-start-scale-y,.9)) translateY(0)}30%{-webkit-transform:scale(var(--fa-bounce-jump-scale-x,.9),var(--fa-bounce-jump-scale-y,1.1)) translateY(var(--fa-bounce-height,-.5em));transform:scale(var(--fa-bounce-jump-scale-x,.9),var(--fa-bounce-jump-scale-y,1.1)) translateY(var(--fa-bounce-height,-.5em))}50%{-webkit-transform:scale(var(--fa-bounce-land-scale-x,1.05),var(--fa-bounce-land-scale-y,.95)) translateY(0);transform:scale(var(--fa-bounce-land-scale-x,1.05),var(--fa-bounce-land-scale-y,.95)) translateY(0)}57%{-webkit-transform:scale(1,1) translateY(var(--fa-bounce-rebound,-.125em));transform:scale(1,1) translateY(var(--fa-bounce-rebound,-.125em))}64%{-webkit-transform:scale(1,1) translateY(0);transform:scale(1,1) translateY(0)}100%{-webkit-transform:scale(1,1) translateY(0);transform:scale(1,1) translateY(0)}}@-webkit-keyframes fa-fade{50%{opacity:var(--fa-fade-opacity,.4)}}@keyframes fa-fade{50%{opacity:var(--fa-fade-opacity,.4)}}@-webkit-keyframes fa-beat-fade{0%,100%{opacity:var(--fa-beat-fade-opacity,.4);-webkit-transform:scale(1);transform:scale(1)}50%{opacity:1;-webkit-transform:scale(var(--fa-beat-fade-scale,1.125));transform:scale(var(--fa-beat-fade-scale,1.125))}}@keyframes fa-beat-fade{0%,100%{opacity:var(--fa-beat-fade-opacity,.4);-webkit-transform:scale(1);transform:scale(1)}50%{opacity:1;-webkit-transform:scale(var(--fa-beat-fade-scale,1.125));transform:scale(var(--fa-beat-fade-scale,1.125))}}@-webkit-keyframes fa-flip{50%{-webkit-transform:rotate3d(var(--fa-flip-x,0),var(--fa-flip-y,1),var(--fa-flip-z,0),var(--fa-flip-angle,-180deg));transform:rotate3d(var(--fa-flip-x,0),var(--fa-flip-y,1),var(--fa-flip-z,0),var(--fa-flip-angle,-180deg))}}@keyframes fa-flip{50%{-webkit-transform:rotate3d(var(--fa-flip-x,0),var(--fa-flip-y,1),var(--fa-flip-z,0),var(--fa-flip-angle,-180deg));transform:rotate3d(var(--fa-flip-x,0),var(--fa-flip-y,1),var(--fa-flip-z,0),var(--fa-flip-angle,-180deg))}}@-webkit-keyframes fa-shake{0%{-webkit-transform:rotate(-15deg);transform:rotate(-15deg)}4%{-webkit-transform:rotate(15deg);transform:rotate(15deg)}24%,8%{-webkit-transform:rotate(-18deg);transform:rotate(-18deg)}12%,28%{-webkit-transform:rotate(18deg);transform:rotate(18deg)}16%{-webkit-transform:rotate(-22deg);transform:rotate(-22deg)}20%{-webkit-transform:rotate(22deg);transform:rotate(22deg)}32%{-webkit-transform:rotate(-12deg);transform:rotate(-12deg)}36%{-webkit-transform:rotate(12deg);transform:rotate(12deg)}100%,40%{-webkit-transform:rotate(0);transform:rotate(0)}}@keyframes fa-shake{0%{-webkit-transform:rotate(-15deg);transform:rotate(-15deg)}4%{-webkit-transform:rotate(15deg);transform:rotate(15deg)}24%,8%{-webkit-transform:rotate(-18deg);transform:rotate(-18deg)}12%,28%{-webkit-transform:rotate(18deg);transform:rotate(18deg)}16%{-webkit-transform:rotate(-22deg);transform:rotate(-22deg)}20%{-webkit-transform:rotate(22deg);transform:rotate(22deg)}32%{-webkit-transform:rotate(-12deg);transform:rotate(-12deg)}36%{-webkit-transform:rotate(12deg);transform:rotate(12deg)}100%,40%{-webkit-transform:rotate(0);transform:rotate(0)}}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-both,.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}.fa-rotate-by{-webkit-transform:rotate(var(--fa-rotate-angle,0));transform:rotate(var(--fa-rotate-angle,0))}.fa-stack{display:inline-block;vertical-align:middle;height:2em;position:relative;width:2.5em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0;z-index:var(--fa-stack-z-index,auto)}.svg-inline--fa.fa-stack-1x{height:1em;width:1.25em}.svg-inline--fa.fa-stack-2x{height:2em;width:2.5em}.fa-inverse{color:var(--fa-inverse,#fff)}.fa-sr-only,.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.fa-sr-only-focusable:not(:focus),.sr-only-focusable:not(:focus){position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.svg-inline--fa .fa-primary{fill:var(--fa-primary-color,currentColor);opacity:var(--fa-primary-opacity,1)}.svg-inline--fa .fa-secondary{fill:var(--fa-secondary-color,currentColor);opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-primary{opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-secondary{opacity:var(--fa-primary-opacity,1)}.svg-inline--fa mask .fa-primary,.svg-inline--fa mask .fa-secondary{fill:#000}.fa-duotone.fa-inverse,.fad.fa-inverse{color:var(--fa-inverse,#fff)}</style><link href="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/theme.css" rel="stylesheet">
+<link href="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/bootstrap.css" rel="stylesheet">
+<link href="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/pydata-sphinx-theme.css" rel="stylesheet">
+<link href="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/all.min.css" rel="stylesheet">
+<link rel="preload" as="font" type="font/woff2" crossorigin="" href="https://matplotlib.org/stable/_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin="" href="https://matplotlib.org/stable/_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin="" href="https://matplotlib.org/stable/_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2">
+<link rel="stylesheet" type="text/css" href="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/pygments.css">
+<link rel="stylesheet" type="text/css" href="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/style.css">
+<link rel="stylesheet" type="text/css" href="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/graphviz.css">
+<link rel="stylesheet" type="text/css" href="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/plot_directive.css">
+<link rel="stylesheet" type="text/css" href="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/copybutton.css">
+<link rel="stylesheet" type="text/css" href="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/sg_gallery.css">
+<link rel="stylesheet" type="text/css" href="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/sg_gallery-binder.css">
+<link rel="stylesheet" type="text/css" href="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/sg_gallery-dataframe.css">
+<link rel="stylesheet" type="text/css" href="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/sg_gallery-rendered-html.css">
+<link rel="stylesheet" type="text/css" href="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/sphinx-design.min.css">
+<link rel="stylesheet" type="text/css" href="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/mpl.css">
+
+<link rel="preload" as="script" href="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/bootstrap.js">
+<link rel="preload" as="script" href="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/pydata-sphinx-theme.js">
+<script src="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/all.min.js" type="text/javascript"></script>
+<script src="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/documentation_options.js" type="text/javascript"></script>
+<script src="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/doctools.js" type="text/javascript"></script>
+<script src="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/sphinx_highlight.js" type="text/javascript"></script>
+<script src="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/clipboard.min.js" type="text/javascript"></script>
+<script src="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/copybutton.js" type="text/javascript"></script>
+<script src="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/design-tabs.js" type="text/javascript"></script>
+<script data-domain="matplotlib.org" defer="defer" src="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/script.js" type="text/javascript"></script>
+<script type="text/javascript">DOCUMENTATION_OPTIONS.pagename = 'gallery/color/named_colors';</script>
+<script type="text/javascript">
+        DOCUMENTATION_OPTIONS.theme_version = '0.15.4';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://matplotlib.org/devdocs/_static/switcher.json?v3.9.2-3-gd04b2f64fe';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '3.9.2';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner = true;
+        </script>
+<link rel="canonical" href="https://matplotlib.org/stable/gallery/color/named_colors.html">
+<link rel="search" type="application/opensearchdescription+xml" title="Search within Matplotlib 3.9.2 documentation" href="https://matplotlib.org/stable/_static/opensearch.xml">
+<link rel="icon" href="https://matplotlib.org/stable/_static/favicon.ico">
+<link rel="search" title="Search" href="https://matplotlib.org/stable/search.html">
+<link rel="next" title="Ways to set a color's alpha value" href="https://matplotlib.org/stable/gallery/color/set_alpha.html">
+<link rel="prev" title="Selecting individual colors from a colormap" href="https://matplotlib.org/stable/gallery/color/individual_colors_from_cmap.html">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="docsearch:language" content="en">
+<meta name="docbuild:last-update" content="Aug 12, 2024">
+</head>
+<body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+<div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+<div id="pst-scroll-pixel-helper"></div>
+<button type="button" class="btn rounded-pill" id="pst-back-to-top" style="display: none;">
+<svg class="svg-inline--fa fa-arrow-up" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"></path></svg><!-- <i class="fa-solid fa-arrow-up"></i> Font Awesome fontawesome.com -->Back to top</button>
+<input type="checkbox" class="sidebar-toggle" id="pst-primary-sidebar-checkbox">
+<label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+<input type="checkbox" class="sidebar-toggle" id="pst-secondary-sidebar-checkbox">
+<label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+<div class="search-button__wrapper">
+<div class="search-button__overlay"></div>
+<div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+<svg class="svg-inline--fa fa-magnifying-glass" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg><!-- <i class="fa-solid fa-magnifying-glass"></i> Font Awesome fontawesome.com -->
+<input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false">
+<span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+</div>
+<div class="pst-async-banner-revealer" style="height: auto;">
+<aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+<button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+<svg class="svg-inline--fa fa-bars" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path></svg><!-- <span class="fa-solid fa-bars"></span> Font Awesome fontawesome.com -->
+</button>
+<div class="col-lg-3 navbar-header-items__start">
+<div class="navbar-item">
+<a class="navbar-brand logo" href="https://matplotlib.org/stable/">
+<img src="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/logo_light.svg" class="logo__image only-light" alt="Matplotlib 3.9.2 documentation - Home">
+<script type="text/javascript">document.write(`<img src="../../_static/logo_dark.svg" class="logo__image only-dark" alt="Matplotlib 3.9.2 documentation - Home"/>`);</script><img src="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/logo_dark.svg" class="logo__image only-dark" alt="Matplotlib 3.9.2 documentation - Home">
+</a></div>
+</div>
+<div class="col-lg-9 navbar-header-items">
+<div class="me-auto navbar-header-items__center">
+<div class="navbar-item"><ul id="navbar-main-elements" class="navbar-nav">
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/stable/plot_types/index.html">Plot types</a>
+</li>
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/stable/users/index.html">User guide</a>
+</li>
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/stable/tutorials/index.html">Tutorials</a>
+</li>
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/stable/gallery/index.html">Examples</a>
+</li>
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/stable/api/index.html">Reference</a>
+</li>
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/stable/devel/index.html">Contribute</a>
+</li>
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/stable/users/release_notes.html">Releases</a>
+</li>
+</ul></div>
+</div>
+<div class="navbar-header-items__end">
+<div class="navbar-item navbar-persistent--container">
+<script type="text/javascript">
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip" data-bs-original-title="Search">
+    <svg class="svg-inline--fa fa-magnifying-glass fa-lg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg><!-- <i class="fa-solid fa-magnifying-glass fa-lg"></i> Font Awesome fontawesome.com -->
+  </button>
+
+</div>
+<div class="navbar-item">
+<script type="text/javascript">
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip" data-bs-original-title="light/dark">
+    <svg class="svg-inline--fa fa-sun theme-switch fa-lg" data-mode="light" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sun" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"></path></svg><!-- <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i> Font Awesome fontawesome.com -->
+    <svg class="svg-inline--fa fa-moon theme-switch fa-lg" data-mode="dark" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="moon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg><!-- <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i> Font Awesome fontawesome.com -->
+    <svg class="svg-inline--fa fa-circle-half-stroke theme-switch fa-lg" data-mode="auto" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-half-stroke" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path></svg><!-- <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i> Font Awesome fontawesome.com -->
+  </button>
+</div>
+<div class="navbar-item">
+<script type="text/javascript">
+document.write(`
+  <div class="version-switcher__container dropdown">
+    <button id="pst-version-switcher-button-2"
+      type="button"
+      class="version-switcher__button btn btn-sm dropdown-toggle"
+      data-bs-toggle="dropdown"
+      aria-haspopup="listbox"
+      aria-controls="pst-version-switcher-list-2"
+      aria-label="Version switcher list"
+    >
+      Choose version  <!-- this text may get changed later by javascript -->
+      <span class="caret"></span>
+    </button>
+    <div id="pst-version-switcher-list-2"
+      class="version-switcher__menu dropdown-menu list-group-flush py-0"
+      role="listbox" aria-labelledby="pst-version-switcher-button-2">
+      <!-- dropdown will be populated by javascript on page load -->
+    </div>
+  </div>
+`);
+</script>
+  <div class="version-switcher__container dropdown">
+    <button id="pst-version-switcher-button-2" type="button" class="version-switcher__button btn btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="listbox" aria-controls="pst-version-switcher-list-2" aria-label="Version switcher list" data-active-version-name="3.9 (stable)" data-active-version="3.9.2">3.9 (stable)</button>
+    <div id="pst-version-switcher-list-2" class="version-switcher__menu dropdown-menu list-group-flush py-0 dropdown-menu-dark" role="listbox" aria-labelledby="pst-version-switcher-button-2">
+      <!-- dropdown will be populated by javascript on page load -->
+    <a class="dropdown-item list-group-item list-group-item-action py-1 active" href="https://matplotlib.org/stable/gallery/color/named_colors.html" role="option" data-version-name="3.9 (stable)" data-version="3.9.2"><span>3.9 (stable)</span></a><a class="dropdown-item list-group-item list-group-item-action py-1" href="https://matplotlib.org/devdocs/gallery/color/named_colors.html" role="option" data-version-name="3.10 (dev)" data-version="dev"><span>3.10 (dev)</span></a><a class="dropdown-item list-group-item list-group-item-action py-1" href="https://matplotlib.org/3.8.4/gallery/color/named_colors.html" role="option" data-version-name="3.8" data-version="3.8.4"><span>3.8</span></a><a class="dropdown-item list-group-item list-group-item-action py-1" href="https://matplotlib.org/3.7.5/gallery/color/named_colors.html" role="option" data-version-name="3.7" data-version="3.7.5"><span>3.7</span></a><a class="dropdown-item list-group-item list-group-item-action py-1" href="https://matplotlib.org/3.6.3/gallery/color/named_colors.html" role="option" data-version-name="3.6" data-version="3.6.3"><span>3.6</span></a><a class="dropdown-item list-group-item list-group-item-action py-1" href="https://matplotlib.org/3.5.3/gallery/color/named_colors.html" role="option" data-version-name="3.5" data-version="3.5.3"><span>3.5</span></a><a class="dropdown-item list-group-item list-group-item-action py-1" href="https://matplotlib.org/3.4.3/gallery/color/named_colors.html" role="option" data-version-name="3.4" data-version="3.4.3"><span>3.4</span></a><a class="dropdown-item list-group-item list-group-item-action py-1" href="https://matplotlib.org/3.3.4/gallery/color/named_colors.html" role="option" data-version-name="3.3" data-version="3.3.4"><span>3.3</span></a><a class="dropdown-item list-group-item list-group-item-action py-1" href="https://matplotlib.org/2.2.4/gallery/color/named_colors.html" role="option" data-version-name="2.2" data-version="2.2.4"><span>2.2</span></a></div>
+  </div>
+</div>
+<div class="navbar-item"><ul class="navbar-icon-links" aria-label="Icon Links">
+<li class="nav-item">
+<a href="https://gitter.im/matplotlib/matplotlib" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Gitter"><svg class="svg-inline--fa fa-gitter fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="gitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M66.4 322.5H16V0h50.4v322.5zM166.9 76.1h-50.4V512h50.4V76.1zm100.6 0h-50.4V512h50.4V76.1zM368 76h-50.4v247H368V76z"></path></svg><!-- <i class="fa-brands fa-gitter fa-lg" aria-hidden="true"></i> Font Awesome fontawesome.com -->
+<span class="sr-only">Gitter</span></a>
+</li>
+<li class="nav-item">
+<a href="https://discourse.matplotlib.org/" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Discourse"><svg class="svg-inline--fa fa-discourse fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discourse" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M225.9 32C103.3 32 0 130.5 0 252.1 0 256 .1 480 .1 480l225.8-.2c122.7 0 222.1-102.3 222.1-223.9C448 134.3 348.6 32 225.9 32zM224 384c-19.4 0-37.9-4.3-54.4-12.1L88.5 392l22.9-75c-9.8-18.1-15.4-38.9-15.4-61 0-70.7 57.3-128 128-128s128 57.3 128 128-57.3 128-128 128z"></path></svg><!-- <i class="fa-brands fa-discourse fa-lg" aria-hidden="true"></i> Font Awesome fontawesome.com -->
+<span class="sr-only">Discourse</span></a>
+</li>
+<li class="nav-item">
+<a href="https://github.com/matplotlib/matplotlib" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="GitHub"><svg class="svg-inline--fa fa-github fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fa-brands fa-github fa-lg" aria-hidden="true"></i> Font Awesome fontawesome.com -->
+<span class="sr-only">GitHub</span></a>
+</li>
+<li class="nav-item">
+<a href="https://twitter.com/matplotlib/" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Twitter"><svg class="svg-inline--fa fa-twitter fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg><!-- <i class="fa-brands fa-twitter fa-lg" aria-hidden="true"></i> Font Awesome fontawesome.com -->
+<span class="sr-only">Twitter</span></a>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="navbar-persistent--mobile">
+<script type="text/javascript">
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip" data-bs-original-title="Search">
+    <svg class="svg-inline--fa fa-magnifying-glass fa-lg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="magnifying-glass" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg><!-- <i class="fa-solid fa-magnifying-glass fa-lg"></i> Font Awesome fontawesome.com -->
+  </button>
+
+</div>
+<button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+<svg class="svg-inline--fa fa-outdent" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="outdent" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M0 64C0 46.3 14.3 32 32 32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 96 0 81.7 0 64zM192 192c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H224c-17.7 0-32-14.3-32-32zm32 96H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H224c-17.7 0-32-14.3-32-32s14.3-32 32-32zM0 448c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM.2 268.6c-8.2-6.4-8.2-18.9 0-25.3l101.9-79.3c10.5-8.2 25.8-.7 25.8 12.6V335.3c0 13.3-15.3 20.8-25.8 12.6L.2 268.6z"></path></svg><!-- <span class="fa-solid fa-outdent"></span> Font Awesome fontawesome.com -->
+</button>
+</div>
+</header>
+<div class="bd-container">
+<div class="bd-container__inner bd-page-width">
+<div class="bd-sidebar-primary bd-sidebar">
+<div class="sidebar-header-items sidebar-primary__section">
+<div class="sidebar-header-items__center">
+<div class="navbar-item"><ul id="navbar-main-elements" class="navbar-nav">
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/stable/plot_types/index.html">Plot types</a>
+</li>
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/stable/users/index.html">User guide</a>
+</li>
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/stable/tutorials/index.html">Tutorials</a>
+</li>
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/stable/gallery/index.html">Examples</a>
+</li>
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/stable/api/index.html">Reference</a>
+</li>
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/stable/devel/index.html">Contribute</a>
+</li>
+<li class="nav-item">
+<a class="reference internal nav-link" href="https://matplotlib.org/stable/users/release_notes.html">Releases</a>
+</li>
+</ul></div>
+</div>
+<div class="sidebar-header-items__end">
+<div class="navbar-item">
+<script type="text/javascript">
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip" data-bs-original-title="light/dark">
+    <svg class="svg-inline--fa fa-sun theme-switch fa-lg" data-mode="light" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sun" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"></path></svg><!-- <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i> Font Awesome fontawesome.com -->
+    <svg class="svg-inline--fa fa-moon theme-switch fa-lg" data-mode="dark" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="moon" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg><!-- <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i> Font Awesome fontawesome.com -->
+    <svg class="svg-inline--fa fa-circle-half-stroke theme-switch fa-lg" data-mode="auto" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-half-stroke" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"></path></svg><!-- <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i> Font Awesome fontawesome.com -->
+  </button>
+</div>
+<div class="navbar-item">
+<script type="text/javascript">
+document.write(`
+  <div class="version-switcher__container dropdown">
+    <button id="pst-version-switcher-button-3"
+      type="button"
+      class="version-switcher__button btn btn-sm dropdown-toggle"
+      data-bs-toggle="dropdown"
+      aria-haspopup="listbox"
+      aria-controls="pst-version-switcher-list-3"
+      aria-label="Version switcher list"
+    >
+      Choose version  <!-- this text may get changed later by javascript -->
+      <span class="caret"></span>
+    </button>
+    <div id="pst-version-switcher-list-3"
+      class="version-switcher__menu dropdown-menu list-group-flush py-0"
+      role="listbox" aria-labelledby="pst-version-switcher-button-3">
+      <!-- dropdown will be populated by javascript on page load -->
+    </div>
+  </div>
+`);
+</script>
+  <div class="version-switcher__container dropdown">
+    <button id="pst-version-switcher-button-3" type="button" class="version-switcher__button btn btn-sm dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="listbox" aria-controls="pst-version-switcher-list-3" aria-label="Version switcher list" data-active-version-name="3.9 (stable)" data-active-version="3.9.2">3.9 (stable)</button>
+    <div id="pst-version-switcher-list-3" class="version-switcher__menu dropdown-menu list-group-flush py-0 dropdown-menu-dark" role="listbox" aria-labelledby="pst-version-switcher-button-3">
+      <!-- dropdown will be populated by javascript on page load -->
+    <a class="dropdown-item list-group-item list-group-item-action py-1 active" href="https://matplotlib.org/stable/gallery/color/named_colors.html" role="option" data-version-name="3.9 (stable)" data-version="3.9.2"><span>3.9 (stable)</span></a><a class="dropdown-item list-group-item list-group-item-action py-1" href="https://matplotlib.org/devdocs/gallery/color/named_colors.html" role="option" data-version-name="3.10 (dev)" data-version="dev"><span>3.10 (dev)</span></a><a class="dropdown-item list-group-item list-group-item-action py-1" href="https://matplotlib.org/3.8.4/gallery/color/named_colors.html" role="option" data-version-name="3.8" data-version="3.8.4"><span>3.8</span></a><a class="dropdown-item list-group-item list-group-item-action py-1" href="https://matplotlib.org/3.7.5/gallery/color/named_colors.html" role="option" data-version-name="3.7" data-version="3.7.5"><span>3.7</span></a><a class="dropdown-item list-group-item list-group-item-action py-1" href="https://matplotlib.org/3.6.3/gallery/color/named_colors.html" role="option" data-version-name="3.6" data-version="3.6.3"><span>3.6</span></a><a class="dropdown-item list-group-item list-group-item-action py-1" href="https://matplotlib.org/3.5.3/gallery/color/named_colors.html" role="option" data-version-name="3.5" data-version="3.5.3"><span>3.5</span></a><a class="dropdown-item list-group-item list-group-item-action py-1" href="https://matplotlib.org/3.4.3/gallery/color/named_colors.html" role="option" data-version-name="3.4" data-version="3.4.3"><span>3.4</span></a><a class="dropdown-item list-group-item list-group-item-action py-1" href="https://matplotlib.org/3.3.4/gallery/color/named_colors.html" role="option" data-version-name="3.3" data-version="3.3.4"><span>3.3</span></a><a class="dropdown-item list-group-item list-group-item-action py-1" href="https://matplotlib.org/2.2.4/gallery/color/named_colors.html" role="option" data-version-name="2.2" data-version="2.2.4"><span>2.2</span></a></div>
+  </div>
+</div>
+<div class="navbar-item"><ul class="navbar-icon-links" aria-label="Icon Links">
+<li class="nav-item">
+<a href="https://gitter.im/matplotlib/matplotlib" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Gitter"><svg class="svg-inline--fa fa-gitter fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="gitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M66.4 322.5H16V0h50.4v322.5zM166.9 76.1h-50.4V512h50.4V76.1zm100.6 0h-50.4V512h50.4V76.1zM368 76h-50.4v247H368V76z"></path></svg><!-- <i class="fa-brands fa-gitter fa-lg" aria-hidden="true"></i> Font Awesome fontawesome.com -->
+<span class="sr-only">Gitter</span></a>
+</li>
+<li class="nav-item">
+<a href="https://discourse.matplotlib.org/" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Discourse"><svg class="svg-inline--fa fa-discourse fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discourse" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M225.9 32C103.3 32 0 130.5 0 252.1 0 256 .1 480 .1 480l225.8-.2c122.7 0 222.1-102.3 222.1-223.9C448 134.3 348.6 32 225.9 32zM224 384c-19.4 0-37.9-4.3-54.4-12.1L88.5 392l22.9-75c-9.8-18.1-15.4-38.9-15.4-61 0-70.7 57.3-128 128-128s128 57.3 128 128-57.3 128-128 128z"></path></svg><!-- <i class="fa-brands fa-discourse fa-lg" aria-hidden="true"></i> Font Awesome fontawesome.com -->
+<span class="sr-only">Discourse</span></a>
+</li>
+<li class="nav-item">
+<a href="https://github.com/matplotlib/matplotlib" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="GitHub"><svg class="svg-inline--fa fa-github fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg><!-- <i class="fa-brands fa-github fa-lg" aria-hidden="true"></i> Font Awesome fontawesome.com -->
+<span class="sr-only">GitHub</span></a>
+</li>
+<li class="nav-item">
+<a href="https://twitter.com/matplotlib/" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Twitter"><svg class="svg-inline--fa fa-twitter fa-lg" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg><!-- <i class="fa-brands fa-twitter fa-lg" aria-hidden="true"></i> Font Awesome fontawesome.com -->
+<span class="sr-only">Twitter</span></a>
+</li>
+</ul></div>
+</div>
+</div>
+<div class="sidebar-primary-items__start sidebar-primary__section">
+<div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links" aria-label="Section Navigation">
+<p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+<div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/index.html">Lines, bars and markers</a><details><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/bar_colors.html">Bar color demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/bar_label_demo.html">Bar Label Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/bar_stacked.html">Stacked bar chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/barchart.html">Grouped bar chart with labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/barh.html">Horizontal bar chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/broken_barh.html">Broken Barh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/capstyle.html">CapStyle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/categorical_variables.html">Plotting categorical variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/cohere.html">Plotting the coherence of two signals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/csd_demo.html">Cross spectral density (CSD)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/curve_error_band.html">Curve with error band</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/errorbar_limits_simple.html">Errorbar limit selection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/errorbar_subsample.html">Errorbar subsampling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/eventcollection_demo.html">EventCollection Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/eventplot_demo.html">Eventplot demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/fill.html">Filled polygon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/fill_between_alpha.html">Fill Between and Alpha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/fill_between_demo.html">Filling the area between lines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/fill_betweenx_demo.html">Fill Betweenx Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/filled_step.html">Hatch-filled histograms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/gradient_bar.html">Bar chart with gradients</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/hat_graph.html">Hat graph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/horizontal_barchart_distribution.html">Discrete distribution as horizontal bar chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/joinstyle.html">JoinStyle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/line_demo_dash_control.html">Customizing dashed line styles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/lines_with_ticks_demo.html">Lines with a ticked patheffect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/linestyles.html">Linestyles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/marker_reference.html">Marker reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/markevery_demo.html">Markevery Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/masked_demo.html">Plotting masked and NaN values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/multicolored_line.html">Multicolored lines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/multivariate_marker_plot.html">Mapping marker properties to multivariate data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/psd_demo.html">Power spectral density (PSD)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/scatter_demo2.html">Scatter Demo2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/scatter_hist.html">Scatter plot with histograms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/scatter_masked.html">Scatter Masked</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/scatter_star_poly.html">Marker examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/scatter_with_legend.html">Scatter plots with a legend</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/simple_plot.html">Simple Plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/span_regions.html">Shade regions defined by a logical mask using fill_between</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/spectrum_demo.html">Spectrum representations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/stackplot_demo.html">Stackplots and streamgraphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/stairs_demo.html">Stairs Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/stem_plot.html">Stem Plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/step_demo.html">Step Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/timeline.html">Creating a timeline with lines, dates, and text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/vline_hline_demo.html">hlines and vlines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/lines_bars_and_markers/xcorr_acorr_demo.html">Cross- and auto-correlation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/index.html">Images, contours and fields</a><details><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/affine_image.html">Affine transform of an image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/barb_demo.html">Wind Barbs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/barcode_demo.html">Barcode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/colormap_interactive_adjustment.html">Interactive Adjustment of Colormap Range</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/colormap_normalizations.html">Colormap normalizations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/colormap_normalizations_symlognorm.html">Colormap normalizations SymLogNorm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/contour_corner_mask.html">Contour Corner Mask</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/contour_demo.html">Contour Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/contour_image.html">Contour Image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/contour_label_demo.html">Contour Label Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/contourf_demo.html">Contourf demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/contourf_hatching.html">Contourf Hatching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/contourf_log.html">Contourf and log color scale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/contours_in_optimization_demo.html">Contouring the solution space of optimizations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/demo_bboximage.html">BboxImage Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/figimage_demo.html">Figimage Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/image_annotated_heatmap.html">Creating annotated heatmaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/image_antialiasing.html">Image antialiasing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/image_clip_path.html">Clipping images with patches</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/image_demo.html">Many ways to plot images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/image_masked.html">Image Masked</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/image_nonuniform.html">Image nonuniform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/image_transparency_blend.html">Blend transparency with color in 2D images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/image_zcoord.html">Modifying the coordinate formatter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/interpolation_methods.html">Interpolations for imshow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/irregulardatagrid.html">Contour plot of irregularly spaced data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/layer_images.html">Layer Images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/matshow.html">Visualize matrices with matshow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/multi_image.html">Multiple images with one colorbar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/pcolor_demo.html">pcolor images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/pcolormesh_grids.html">pcolormesh grids and shading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/pcolormesh_levels.html">pcolormesh</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/plot_streamplot.html">Streamplot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/quadmesh_demo.html">QuadMesh Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/quiver_demo.html">Advanced quiver and quiverkey functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/quiver_simple_demo.html">Quiver Simple Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/shading_example.html">Shading example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/specgram_demo.html">Spectrogram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/spy_demos.html">Spy Demos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/tricontour_demo.html">Tricontour Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/tricontour_smooth_delaunay.html">Tricontour Smooth Delaunay</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/tricontour_smooth_user.html">Tricontour Smooth User</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/trigradient_demo.html">Trigradient Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/triinterp_demo.html">Triinterp Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/tripcolor_demo.html">Tripcolor Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/triplot_demo.html">Triplot Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/images_contours_and_fields/watermark_image.html">Watermark image</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/index.html">Subplots, axes and figures</a><details><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/align_labels_demo.html">Aligning Labels and Titles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/auto_subplots_adjust.html">Programmatically controlling subplot adjustment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/axes_box_aspect.html">Axes box aspect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/axes_demo.html">Axes Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/axes_margins.html">Controlling view limits using margins and sticky_edges</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/axes_props.html">Axes Props</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/axes_zoom_effect.html">Axes Zoom Effect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/axhspan_demo.html">axhspan Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/axis_equal_demo.html">Equal axis aspect ratio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/axis_labels_demo.html">Axis Label Position</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/broken_axis.html">Broken Axis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/custom_figure_class.html">Custom Figure subclasses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/demo_constrained_layout.html">Resizing Axes with constrained layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/demo_tight_layout.html">Resizing Axes with tight layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/fahrenheit_celsius_scales.html">Different scales on the same Axes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/figure_size_units.html">Figure size in different units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/figure_title.html">Figure labels: suptitle, supxlabel, supylabel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/ganged_plots.html">Creating adjacent subplots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/geo_demo.html">Geographic Projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/gridspec_and_subplots.html">Combining two subplots using subplots and GridSpec</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/gridspec_multicolumn.html">Using Gridspec to make multi-column/row subplot layouts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/gridspec_nested.html">Nested Gridspecs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/invert_axes.html">Inverted axis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/multiple_figs_demo.html">Managing multiple figures in pyplot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/secondary_axis.html">Secondary Axis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/share_axis_lims_views.html">Sharing axis limits and views</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/shared_axis_demo.html">Shared axis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/subfigures.html">Figure subfigures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/subplot.html">Multiple subplots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/subplots_adjust.html">Subplots spacings and margins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/subplots_demo.html">Creating multiple subplots using <code class="docutils literal notranslate"><span class="pre">plt.subplots</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/two_scales.html">Plots with different scales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/subplots_axes_and_figures/zoom_inset_axes.html">Zoom region inset Axes</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://matplotlib.org/stable/gallery/statistics/index.html">Statistics</a><details><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/statistics/barchart_demo.html">Percentiles as horizontal bar chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/statistics/boxplot.html">Artist customization in box plots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/statistics/boxplot_color.html">Box plots with custom fill colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/statistics/boxplot_demo.html">Boxplots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/statistics/boxplot_vs_violin.html">Box plot vs. violin plot comparison</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/statistics/bxp.html">Separate calculation and plotting of boxplots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/statistics/confidence_ellipse.html">Plot a confidence ellipse of a two-dimensional dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/statistics/customized_violin.html">Violin plot customization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/statistics/errorbar.html">Errorbar function</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/statistics/errorbar_features.html">Different ways of specifying error bars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/statistics/errorbar_limits.html">Including upper and lower limits in error bars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/statistics/errorbars_and_boxes.html">Creating boxes from error bars using PatchCollection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/statistics/hexbin_demo.html">Hexagonal binned plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/statistics/hist.html">Histograms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/statistics/histogram_bihistogram.html">Bihistogram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/statistics/histogram_cumulative.html">Plotting cumulative distributions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/statistics/histogram_histtypes.html">Demo of the histogram function's different <code class="docutils literal notranslate"><span class="pre">histtype</span></code> settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/statistics/histogram_multihist.html">The histogram (hist) function with multiple data sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/statistics/histogram_normalization.html">Histogram bins, density, and weight</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/statistics/multiple_histograms_side_by_side.html">Producing multiple histograms side by side</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/statistics/time_series_histogram.html">Time Series Histogram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/statistics/violinplot.html">Violin plot basics</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://matplotlib.org/stable/gallery/pie_and_polar_charts/index.html">Pie and polar charts</a><details><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/pie_and_polar_charts/pie_features.html">Pie charts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/pie_and_polar_charts/bar_of_pie.html">Bar of pie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/pie_and_polar_charts/nested_pie.html">Nested pie charts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/pie_and_polar_charts/pie_and_donut_labels.html">Labeling a pie and a donut</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/pie_and_polar_charts/polar_bar.html">Bar chart on polar axis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/pie_and_polar_charts/polar_demo.html">Polar plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/pie_and_polar_charts/polar_error_caps.html">Error bar rendering on polar axis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/pie_and_polar_charts/polar_legend.html">Polar legend</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/pie_and_polar_charts/polar_scatter.html">Scatter plot on polar axis</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/index.html">Text, labels and annotations</a><details><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/accented_text.html">Accented text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/align_ylabels.html">Align y-labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/angle_annotation.html">Scale invariant angle label</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/angles_on_bracket_arrows.html">Angle annotations on bracket arrows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/annotate_transform.html">Annotate Transform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/annotation_basic.html">Annotating a plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/annotation_demo.html">Annotating Plots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/annotation_polar.html">Annotation Polar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/arrow_demo.html">Arrow Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/autowrap.html">Auto-wrapping text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/custom_legends.html">Composing Custom Legends</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/date.html">Date tick labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/demo_annotation_box.html">AnnotationBbox demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/demo_text_path.html">Using a text as a Path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/demo_text_rotation_mode.html">Text Rotation Mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/dfrac_demo.html">The difference between \dfrac and \frac</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/engineering_formatter.html">Labeling ticks using engineering notation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/fancyarrow_demo.html">Annotation arrow style reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/fancytextbox_demo.html">Styling text boxes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/figlegend_demo.html">Figure legend demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/font_family_rc.html">Configuring the font family</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/font_file.html">Using ttf font files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/font_table.html">Font table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/fonts_demo.html">Fonts demo (object-oriented style)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/fonts_demo_kw.html">Fonts demo (keyword arguments)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/label_subplots.html">Labelling subplots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/legend.html">Legend using pre-defined labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/legend_demo.html">Legend Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/line_with_text.html">Artist within an artist</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/mathtext_asarray.html">Convert texts to images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/mathtext_demo.html">Mathtext</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/mathtext_examples.html">Mathtext Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/mathtext_fontfamily_example.html">Math fontfamily</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/multiline.html">Multiline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/placing_text_boxes.html">Placing text boxes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/rainbow_text.html">Concatenating text objects with different properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/stix_fonts_demo.html">STIX Fonts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/tex_demo.html">Rendering math equations using TeX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/text_alignment.html">Text alignment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/text_commands.html">Text Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/text_fontdict.html">Controlling style of text and labels using a dictionary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/text_rotation_relative_to_line.html">Text Rotation Relative To Line</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/titles_demo.html">Title positioning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/unicode_minus.html">Unicode minus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/usetex_baseline_test.html">Usetex Baseline Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/usetex_fonteffects.html">Usetex Fonteffects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/text_labels_and_annotations/watermark_text.html">Text watermark</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="https://matplotlib.org/stable/gallery/color/index.html">Color</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/color/color_demo.html">Color Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/color/color_by_yvalue.html">Color by y-value</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/color/color_cycle_default.html">Colors in the default property cycle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/color/colorbar_basics.html">Colorbar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/color/colormap_reference.html">Colormap reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/color/custom_cmap.html">Creating a colormap from a list of colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/color/individual_colors_from_cmap.html">Selecting individual colors from a colormap</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">List of named colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/color/set_alpha.html">Ways to set a color's alpha value</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://matplotlib.org/stable/gallery/shapes_and_collections/index.html">Shapes and collections</a><details><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/shapes_and_collections/arrow_guide.html">Arrow guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/shapes_and_collections/artist_reference.html">Reference for Matplotlib artists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/shapes_and_collections/collections.html">Line, Poly and RegularPoly Collection with autoscaling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/shapes_and_collections/compound_path.html">Compound path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/shapes_and_collections/dolphin.html">Dolphins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/shapes_and_collections/donut.html">Mmh Donuts!!!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/shapes_and_collections/ellipse_arrow.html">Ellipse with orientation arrow demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/shapes_and_collections/ellipse_collection.html">Ellipse Collection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/shapes_and_collections/ellipse_demo.html">Ellipse Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/shapes_and_collections/fancybox_demo.html">Drawing fancy boxes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/shapes_and_collections/hatch_demo.html">Hatch demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/shapes_and_collections/hatch_style_reference.html">Hatch style reference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/shapes_and_collections/line_collection.html">Plotting multiple lines with a LineCollection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/shapes_and_collections/patch_collection.html">Circles, Wedges and Polygons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/shapes_and_collections/path_patch.html">PathPatch object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/shapes_and_collections/quad_bezier.html">Bezier Curve</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/shapes_and_collections/scatter.html">Scatter plot</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://matplotlib.org/stable/gallery/style_sheets/index.html">Style sheets</a><details><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/style_sheets/bmh.html">Bayesian Methods for Hackers style sheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/style_sheets/dark_background.html">Dark background style sheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/style_sheets/fivethirtyeight.html">FiveThirtyEight style sheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/style_sheets/ggplot.html">ggplot style sheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/style_sheets/grayscale.html">Grayscale style sheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/style_sheets/plot_solarizedlight2.html">Solarized Light stylesheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html">Style sheets reference</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://matplotlib.org/stable/gallery/pyplots/index.html">Module - pyplot</a><details><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/pyplots/axline.html">Infinite lines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/pyplots/pyplot_simple.html">Simple plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/pyplots/pyplot_text.html">Text and mathtext using pyplot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/pyplots/pyplot_three.html">Multiple lines using pyplot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/pyplots/pyplot_two_subplots.html">Two subplots using pyplot</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axes_grid1/index.html">Module - axes_grid1</a><details><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axes_grid1/demo_anchored_direction_arrows.html">Anchored Direction Arrow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axes_grid1/demo_axes_divider.html">Axes divider</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axes_grid1/demo_axes_grid.html">Demo Axes Grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axes_grid1/demo_axes_grid2.html">Axes Grid2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axes_grid1/demo_axes_hbox_divider.html">HBoxDivider and VBoxDivider demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axes_grid1/demo_axes_rgb.html">Showing RGB channels using RGBAxes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axes_grid1/demo_colorbar_with_axes_divider.html">Colorbar with AxesDivider</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axes_grid1/demo_colorbar_with_inset_locator.html">Controlling the position and size of colorbars with Inset Axes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axes_grid1/demo_edge_colorbar.html">Per-row or per-column colorbars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axes_grid1/demo_fixed_size_axes.html">Axes with a fixed physical size</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axes_grid1/demo_imagegrid_aspect.html">Setting a fixed aspect on ImageGrid cells</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axes_grid1/inset_locator_demo.html">Inset locator demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axes_grid1/inset_locator_demo2.html">Inset locator demo 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axes_grid1/make_room_for_ylabel_using_axesgrid.html">Make room for ylabel using axes_grid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axes_grid1/parasite_simple.html">Parasite Simple</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axes_grid1/parasite_simple2.html">Parasite Simple2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axes_grid1/scatter_hist_locatable_axes.html">Scatter Histogram (Locatable Axes)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axes_grid1/simple_anchored_artists.html">Simple Anchored Artists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axes_grid1/simple_axes_divider1.html">Simple Axes Divider 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axes_grid1/simple_axes_divider3.html">Simple axes divider 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axes_grid1/simple_axesgrid.html">Simple ImageGrid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axes_grid1/simple_axesgrid2.html">Simple ImageGrid 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axes_grid1/simple_axisline4.html">Simple Axisline4</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axisartist/index.html">Module - axisartist</a><details><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axisartist/axis_direction.html">Axis Direction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axisartist/demo_axis_direction.html">axis_direction demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axisartist/demo_axisline_style.html">Axis line styles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axisartist/demo_curvelinear_grid.html">Curvilinear grid demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axisartist/demo_curvelinear_grid2.html">Demo CurveLinear Grid2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axisartist/demo_floating_axes.html"><code class="docutils literal notranslate"><span class="pre">floating_axes</span></code> features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axisartist/demo_floating_axis.html">floating_axis demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axisartist/demo_parasite_axes.html">Parasite Axes demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axisartist/demo_parasite_axes2.html">Parasite axis demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axisartist/demo_ticklabel_alignment.html">Ticklabel alignment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axisartist/demo_ticklabel_direction.html">Ticklabel direction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axisartist/simple_axis_direction01.html">Simple axis direction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axisartist/simple_axis_direction03.html">Simple axis tick label and tick directions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axisartist/simple_axis_pad.html">Simple Axis Pad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axisartist/simple_axisartist1.html">Custom spines with axisartist</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axisartist/simple_axisline.html">Simple Axisline</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/axisartist/simple_axisline3.html">Simple Axisline3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://matplotlib.org/stable/gallery/showcase/index.html">Showcase</a><details><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/showcase/anatomy.html">Anatomy of a figure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/showcase/firefox.html">Firefox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/showcase/integral.html">Integral as the area under a curve</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/showcase/mandelbrot.html">Shaded &amp; power normalized rendering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/showcase/pan_zoom_overlap.html">Pan/zoom events of overlapping axes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/showcase/stock_prices.html">Stock prices over 32 years</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/showcase/xkcd.html">XKCD</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://matplotlib.org/stable/gallery/animation/index.html">Animation</a><details><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/animation/animate_decay.html">Decay</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/animation/animated_histogram.html">Animated histogram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/animation/animation_demo.html">pyplot animation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/animation/bayes_update.html">The Bayes update</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/animation/double_pendulum.html">The double pendulum problem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/animation/dynamic_image.html">Animated image using a precomputed list of images</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/animation/frame_grabbing_sgskip.html">Frame grabbing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/animation/multiple_axes.html">Multiple Axes animation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/animation/pause_resume.html">Pausing and Resuming an Animation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/animation/rain.html">Rain simulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/animation/random_walk.html">Animated 3D random walk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/animation/simple_anim.html">Animated line plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/animation/simple_scatter.html">Animated scatter saved as GIF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/animation/strip_chart.html">Oscilloscope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/animation/unchained.html">MATPLOTLIB <strong>UNCHAINED</strong></a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://matplotlib.org/stable/gallery/event_handling/index.html">Event handling</a><details><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/event_handling/close_event.html">Close Event</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/event_handling/coords_demo.html">Mouse move and click events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/event_handling/cursor_demo.html">Cross-hair cursor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/event_handling/data_browser.html">Data browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/event_handling/figure_axes_enter_leave.html">Figure/Axes enter and leave events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/event_handling/ginput_manual_clabel_sgskip.html">Interactive functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/event_handling/image_slices_viewer.html">Scroll event</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/event_handling/keypress_demo.html">Keypress event</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/event_handling/lasso_demo.html">Lasso Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/event_handling/legend_picking.html">Legend picking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/event_handling/looking_glass.html">Looking Glass</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/event_handling/path_editor.html">Path editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/event_handling/pick_event_demo.html">Pick event demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/event_handling/pick_event_demo2.html">Pick event demo 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/event_handling/poly_editor.html">Poly Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/event_handling/pong_sgskip.html">Pong</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/event_handling/resample.html">Resampling Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/event_handling/timers.html">Timers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/event_handling/trifinder_event_demo.html">Trifinder Event Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/event_handling/viewlims.html">Viewlims</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/event_handling/zoom_window.html">Zoom Window</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/index.html">Miscellaneous</a><details><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/anchored_artists.html">Anchored Artists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/bbox_intersect.html">Changing colors of lines intersecting a box</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/contour_manual.html">Manual Contour</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/coords_report.html">Coords Report</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/custom_projection.html">Custom projection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/customize_rc.html">Customize Rc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/demo_agg_filter.html">AGG filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/demo_ribbon_box.html">Ribbon Box</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/fig_x.html">Adding lines to figures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/fill_spiral.html">Fill Spiral</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/findobj_demo.html">Findobj Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/font_indexing.html">Font indexing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/ftface_props.html">Font properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/histogram_path.html">Building histograms using Rectangles and PolyCollections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/hyperlinks_sgskip.html">Hyperlinks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/image_thumbnail_sgskip.html">Image Thumbnail</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/keyword_plotting.html">Plotting with keywords</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/logos2.html">Matplotlib logo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/multipage_pdf.html">Multipage PDF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/multiprocess_sgskip.html">Multiprocessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/packed_bubbles.html">Packed-bubble chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/patheffect_demo.html">Patheffect Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/print_stdout_sgskip.html">Print Stdout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/rasterization_demo.html">Rasterization for vector graphics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/set_and_get.html">Set and get properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/svg_filter_line.html">SVG Filter Line</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/svg_filter_pie.html">SVG filter pie</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/table_demo.html">Table Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/tickedstroke_demo.html">TickedStroke patheffect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/transoffset.html">transforms.offset_copy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/misc/zorder_demo.html">Zorder Demo</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/index.html">3D plotting</a><details><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/2dcollections3d.html">Plot 2D data on 3D plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/3d_bars.html">Demo of 3D bar charts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/bars3d.html">Create 2D bar graphs in different planes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/box3d.html">3D box surface plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/contour3d.html">Plot contour (level) curves in 3D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/contour3d_2.html">Plot contour (level) curves in 3D using the extend3d option</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/contour3d_3.html">Project contour profiles onto a graph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/contourf3d.html">Filled contours</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/contourf3d_2.html">Project filled contour onto a graph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/custom_shaded_3d_surface.html">Custom hillshading in a 3D surface plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/errorbar3d.html">3D errorbars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/hist3d.html">Create 3D histogram of 2D data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/imshow3d.html">2D images in 3D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/intersecting_planes.html">Intersecting planes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/lines3d.html">Parametric curve</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/lorenz_attractor.html">Lorenz attractor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/mixed_subplots.html">2D and 3D Axes in same figure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/offset.html">Automatic text offsetting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/pathpatch3d.html">Draw flat objects in 3D plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/polys3d.html">Generate polygons to fill under 3D line graph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/projections.html">3D plot projection types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/quiver3d.html">3D quiver plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/rotate_axes3d_sgskip.html">Rotating a 3D plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/scatter3d.html">3D scatterplot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/stem3d_demo.html">3D stem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/subplot3d.html">3D plots as subplots</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/surface3d.html">3D surface (colormap)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/surface3d_2.html">3D surface (solid color)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/surface3d_3.html">3D surface (checkerboard)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/surface3d_radial.html">3D surface with polar coordinates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/text3d.html">Text annotations in 3D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/tricontour3d.html">Triangular 3D contour plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/tricontourf3d.html">Triangular 3D filled contour plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/trisurf3d.html">Triangular 3D surfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/trisurf3d_2.html">More triangular 3D surfaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/view_planes_3d.html">Primary 3D view planes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/voxels.html">3D voxel / volumetric plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/voxels_numpy_logo.html">3D voxel plot of the NumPy logo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/voxels_rgb.html">3D voxel / volumetric plot with RGB colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/voxels_torus.html">3D voxel / volumetric plot with cylindrical coordinates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/wire3d.html">3D wireframe plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/wire3d_animation_sgskip.html">Animate a 3D wireframe plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/mplot3d/wire3d_zero_stride.html">3D wireframe plots in one direction</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://matplotlib.org/stable/gallery/scales/index.html">Scales</a><details><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/scales/asinh_demo.html">Asinh Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/scales/aspect_loglog.html">Loglog Aspect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/scales/custom_scale.html">Custom scale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/scales/log_bar.html">Log Bar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/scales/log_demo.html">Log Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/scales/logit_demo.html">Logit Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/scales/power_norm.html">Exploring normalizations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/scales/scales.html">Scales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/scales/semilogx_demo.html">Log Axis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/scales/symlog_demo.html">Symlog Demo</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://matplotlib.org/stable/gallery/specialty_plots/index.html">Specialty plots</a><details><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/specialty_plots/advanced_hillshading.html">Hillshading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/specialty_plots/anscombe.html">Anscombe's quartet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/specialty_plots/hinton_demo.html">Hinton diagrams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/specialty_plots/ishikawa_diagram.html">Ishikawa Diagram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/specialty_plots/leftventricle_bullseye.html">Left ventricle bullseye</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/specialty_plots/mri_with_eeg.html">MRI with EEG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/specialty_plots/radar_chart.html">Radar chart (aka spider or star chart)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/specialty_plots/sankey_basics.html">The Sankey class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/specialty_plots/sankey_links.html">Long chain of connections using Sankey</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/specialty_plots/sankey_rankine.html">Rankine power cycle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/specialty_plots/skewt.html">SkewT-logP diagram: using transforms and custom projections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/specialty_plots/topographic_hillshading.html">Topographic hillshading</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://matplotlib.org/stable/gallery/spines/index.html">Spines</a><details><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/spines/spines.html">Spines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/spines/spine_placement_demo.html">Spine placement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/spines/spines_dropped.html">Dropped spines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/spines/multiple_yaxis_with_spines.html">Multiple y-axis with Spines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/spines/centered_spines_with_arrows.html">Centered spines with arrows</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://matplotlib.org/stable/gallery/ticks/index.html">Ticks</a><details><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/ticks/auto_ticks.html">Automatically setting tick positions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/ticks/centered_ticklabels.html">Centering labels between ticks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/ticks/colorbar_tick_labelling_demo.html">Colorbar Tick Labelling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/ticks/custom_ticker1.html">Custom Ticker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/ticks/date_concise_formatter.html">Formatting date ticks using ConciseDateFormatter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/ticks/date_demo_convert.html">Date Demo Convert</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/ticks/date_demo_rrule.html">Placing date ticks using recurrence rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/ticks/date_formatters_locators.html">Date tick locators and formatters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/ticks/date_index_formatter.html">Custom tick formatter for time series</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/ticks/date_precision_and_epochs.html">Date Precision and Epochs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/ticks/dollar_ticks.html">Dollar ticks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/ticks/fig_axes_customize_simple.html">Fig Axes Customize Simple</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/ticks/major_minor_demo.html">Major and minor ticks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/ticks/multilevel_ticks.html">Multilevel (nested) ticks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/ticks/scalarformatter.html">The default tick formatter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/ticks/tick-formatters.html">Tick formatters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/ticks/tick-locators.html">Tick locators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/ticks/tick_label_right.html">Set default y-axis tick labels on the right</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/ticks/tick_labels_from_values.html">Setting tick labels from a list of values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/ticks/tick_xlabel_top.html">Move x-axis tick labels to the top</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/ticks/ticklabels_rotation.html">Rotating custom tick labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/ticks/ticks_too_many.html">Fixing too many ticks</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://matplotlib.org/stable/gallery/units/index.html">Units</a><details><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/units/annotate_with_units.html">Annotation with units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/units/artist_tests.html">Artist tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/units/bar_demo2.html">Bar demo with units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/units/bar_unit_demo.html">Group barchart with units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/units/basic_units.html">Basic Units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/units/ellipse_with_units.html">Ellipse with units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/units/evans_test.html">Evans test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/units/radian_demo.html">Radian ticks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/units/units_sample.html">Inches and Centimeters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/units/units_scatter.html">Unit handling</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/index.html">Embedding Matplotlib in graphical user interfaces</a><details><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/canvasagg.html">CanvasAgg demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/embedding_in_gtk3_panzoom_sgskip.html">Embedding in GTK3 with a navigation toolbar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/embedding_in_gtk3_sgskip.html">Embedding in GTK3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/embedding_in_gtk4_panzoom_sgskip.html">Embedding in GTK4 with a navigation toolbar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/embedding_in_gtk4_sgskip.html">Embedding in GTK4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/embedding_in_qt_sgskip.html">Embedding in Qt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/embedding_in_tk_sgskip.html">Embedding in Tk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/embedding_in_wx2_sgskip.html">Embedding in wx #2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/embedding_in_wx3_sgskip.html">Embedding in wx #3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/embedding_in_wx4_sgskip.html">Embedding in wx #4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/embedding_in_wx5_sgskip.html">Embedding in wx #5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/embedding_webagg_sgskip.html">Embedding WebAgg</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/fourier_demo_wx_sgskip.html">Fourier Demo WX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/gtk3_spreadsheet_sgskip.html">GTK3 spreadsheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/gtk4_spreadsheet_sgskip.html">GTK4 spreadsheet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/mathtext_wx_sgskip.html">Display mathtext in WX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/mpl_with_glade3_sgskip.html">Matplotlib with Glade 3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/mplcvd.html">mplcvd -- an example of figure hook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/pylab_with_gtk3_sgskip.html">pyplot with GTK3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/pylab_with_gtk4_sgskip.html">pyplot with GTK4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/svg_histogram_sgskip.html">SVG Histogram</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/svg_tooltip_sgskip.html">SVG Tooltip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/toolmanager_sgskip.html">Tool Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/web_application_server_sgskip.html">Embedding in a web application server (Flask)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/user_interfaces/wxcursor_demo_sgskip.html">Adding a cursor in WX</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://matplotlib.org/stable/gallery/widgets/index.html">Widgets</a><details><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/widgets/annotated_cursor.html">Annotated cursor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/widgets/buttons.html">Buttons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/widgets/check_buttons.html">Check buttons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/widgets/cursor.html">Cursor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/widgets/lasso_selector_demo_sgskip.html">Lasso Selector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/widgets/menu.html">Menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/widgets/mouse_cursor.html">Mouse Cursor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/widgets/multicursor.html">Multicursor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/widgets/polygon_selector_demo.html">Select indices from a collection using polygon selector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/widgets/polygon_selector_simple.html">Polygon Selector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/widgets/radio_buttons.html">Radio Buttons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/widgets/range_slider.html">Thresholding an Image with RangeSlider</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/widgets/rectangle_selector.html">Rectangle and ellipse selectors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/widgets/slider_demo.html">Slider</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/widgets/slider_snap_demo.html">Snapping Sliders to Discrete Values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/widgets/span_selector.html">Span Selector</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/widgets/textbox.html">Textbox</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="https://matplotlib.org/stable/gallery/userdemo/index.html">Userdemo</a><details><summary><span class="toctree-toggle" role="presentation"><svg class="svg-inline--fa fa-chevron-down" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"></path></svg><!-- <i class="fa-solid fa-chevron-down"></i> Font Awesome fontawesome.com --></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/userdemo/annotate_explain.html">Annotate Explain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/userdemo/annotate_text_arrow.html">Annotate Text Arrow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/userdemo/connectionstyle_demo.html">Connection styles for annotations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/userdemo/custom_boxstyle01.html">Custom box styles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/userdemo/demo_gridspec01.html">subplot2grid demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/userdemo/demo_gridspec03.html">GridSpec demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/userdemo/demo_gridspec06.html">Nested GridSpecs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/userdemo/pgf_fonts.html">PGF fonts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/userdemo/pgf_preamble_sgskip.html">PGF preamble</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/userdemo/pgf_texsystem.html">PGF texsystem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/userdemo/simple_annotate01.html">Simple Annotate01</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/userdemo/simple_legend01.html">Simple Legend01</a></li>
+<li class="toctree-l2"><a class="reference internal" href="https://matplotlib.org/stable/gallery/userdemo/simple_legend02.html">Simple Legend02</a></li>
+</ul>
+</details></li>
+</ul>
+</div>
+</nav></div>
+</div>
+<div class="sidebar-primary-items__end sidebar-primary__section">
+</div>
+<div id="rtd-footer-container"></div>
+</div>
+<main id="main-content" class="bd-main" role="main">
+<div class="bd-content">
+<div class="bd-article-container">
+<div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+<div class="header-article-items__start">
+<div class="header-article-item">
+<nav aria-label="Breadcrumb" class="d-print-none">
+<ul class="bd-breadcrumbs">
+<li class="breadcrumb-item breadcrumb-home">
+<a href="https://matplotlib.org/stable/index.html" class="nav-link" aria-label="Home">
+<svg class="svg-inline--fa fa-house" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="house" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"></path></svg><!-- <i class="fa-solid fa-home"></i> Font Awesome fontawesome.com -->
+</a>
+</li>
+<li class="breadcrumb-item"><a href="https://matplotlib.org/stable/gallery/index.html" class="nav-link">Examples</a></li>
+<li class="breadcrumb-item"><a href="https://matplotlib.org/stable/gallery/color/index.html" class="nav-link">Color</a></li>
+<li class="breadcrumb-item active" aria-current="page">List of named colors</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div id="searchbox"></div>
+<article class="bd-article">
+<div class="sphx-glr-download-link-note admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference internal" href="#sphx-glr-download-gallery-color-named-colors-py"><span class="std std-ref">Go to the end</span></a>
+to download the full example code.</p>
+</div>
+<section class="sphx-glr-example-title" id="list-of-named-colors">
+<span id="sphx-glr-gallery-color-named-colors-py"></span><h1>List of named colors<a class="headerlink" href="#list-of-named-colors" title="Link to this heading">#</a></h1>
+<p>This plots a list of the named colors supported by Matplotlib.
+For more information on colors in matplotlib see</p>
+<ul class="simple">
+<li><p>the <a class="reference internal" href="https://matplotlib.org/stable/users/explain/colors/colors.html#colors-def"><span class="std std-ref">Specifying colors</span></a> tutorial;</p></li>
+<li><p>the <a class="reference internal" href="https://matplotlib.org/stable/api/colors_api.html#module-matplotlib.colors" title="matplotlib.colors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">matplotlib.colors</span></code></a> API;</p></li>
+<li><p>the <a class="reference internal" href="https://matplotlib.org/stable/gallery/color/color_demo.html"><span class="doc">Color Demo</span></a>.</p></li>
+</ul>
+<section id="helper-function-for-plotting">
+<h2>Helper Function for Plotting<a class="headerlink" href="#helper-function-for-plotting" title="Link to this heading">#</a></h2>
+<p>First we define a helper function for making a table of colors, then we use it
+on some common color categories.</p>
+<div class="highlight-Python notranslate"><div class="highlight"><pre id="codecell0" tabindex="-1"><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="kn">import</span> <span class="nn">matplotlib.colors</span> <span class="k">as</span> <span class="nn">mcolors</span>
+<span class="kn">from</span> <span class="nn">matplotlib.patches</span> <span class="kn">import</span> <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.Rectangle.html#matplotlib.patches.Rectangle" title="matplotlib.patches.Rectangle" class="sphx-glr-backref-module-matplotlib-patches sphx-glr-backref-type-py-class"><span class="n">Rectangle</span></a>
+
+
+<span class="k">def</span> <span class="nf">plot_colortable</span><span class="p">(</span><span class="n">colors</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">sort_colors</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+
+    <span class="n">cell_width</span> <span class="o">=</span> <span class="mi">212</span>
+    <span class="n">cell_height</span> <span class="o">=</span> <span class="mi">22</span>
+    <span class="n">swatch_width</span> <span class="o">=</span> <span class="mi">48</span>
+    <span class="n">margin</span> <span class="o">=</span> <span class="mi">12</span>
+
+    <span class="c1"># Sort colors by hue, saturation, value and name.</span>
+    <span class="k">if</span> <span class="n">sort_colors</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">names</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span>
+            <span class="n">colors</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">c</span><span class="p">:</span> <span class="nb">tuple</span><span class="p">(</span><a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.rgb_to_hsv.html#matplotlib.colors.rgb_to_hsv" title="matplotlib.colors.rgb_to_hsv" class="sphx-glr-backref-module-matplotlib-colors sphx-glr-backref-type-py-function"><span class="n">mcolors</span><span class="o">.</span><span class="n">rgb_to_hsv</span></a><span class="p">(</span><a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.to_rgb.html#matplotlib.colors.to_rgb" title="matplotlib.colors.to_rgb" class="sphx-glr-backref-module-matplotlib-colors sphx-glr-backref-type-py-function"><span class="n">mcolors</span><span class="o">.</span><span class="n">to_rgb</span></a><span class="p">(</span><span class="n">c</span><span class="p">))))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">names</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">colors</span><span class="p">)</span>
+
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+    <span class="n">nrows</span> <span class="o">=</span> <a href="https://docs.python.org/3/library/math.html#math.ceil" title="math.ceil" class="sphx-glr-backref-module-math sphx-glr-backref-type-py-function"><span class="n">math</span><span class="o">.</span><span class="n">ceil</span></a><span class="p">(</span><span class="n">n</span> <span class="o">/</span> <span class="n">ncols</span><span class="p">)</span>
+
+    <span class="n">width</span> <span class="o">=</span> <span class="n">cell_width</span> <span class="o">*</span> <span class="n">ncols</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">margin</span>
+    <span class="n">height</span> <span class="o">=</span> <span class="n">cell_height</span> <span class="o">*</span> <span class="n">nrows</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">margin</span>
+    <span class="n">dpi</span> <span class="o">=</span> <span class="mi">72</span>
+
+    <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplots.html#matplotlib.pyplot.subplots" title="matplotlib.pyplot.subplots" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">subplots</span></a><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="n">width</span> <span class="o">/</span> <span class="n">dpi</span><span class="p">,</span> <span class="n">height</span> <span class="o">/</span> <span class="n">dpi</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="n">dpi</span><span class="p">)</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">margin</span><span class="o">/</span><span class="n">width</span><span class="p">,</span> <span class="n">margin</span><span class="o">/</span><span class="n">height</span><span class="p">,</span>
+                        <span class="p">(</span><span class="n">width</span><span class="o">-</span><span class="n">margin</span><span class="p">)</span><span class="o">/</span><span class="n">width</span><span class="p">,</span> <span class="p">(</span><span class="n">height</span><span class="o">-</span><span class="n">margin</span><span class="p">)</span><span class="o">/</span><span class="n">height</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">cell_width</span> <span class="o">*</span> <span class="n">ncols</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="n">cell_height</span> <span class="o">*</span> <span class="p">(</span><span class="n">nrows</span><span class="o">-</span><span class="mf">0.5</span><span class="p">),</span> <span class="o">-</span><span class="n">cell_height</span><span class="o">/</span><span class="mf">2.</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">()</span>
+
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">names</span><span class="p">):</span>
+        <span class="n">row</span> <span class="o">=</span> <span class="n">i</span> <span class="o">%</span> <span class="n">nrows</span>
+        <span class="n">col</span> <span class="o">=</span> <span class="n">i</span> <span class="o">//</span> <span class="n">nrows</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">row</span> <span class="o">*</span> <span class="n">cell_height</span>
+
+        <span class="n">swatch_start_x</span> <span class="o">=</span> <span class="n">cell_width</span> <span class="o">*</span> <span class="n">col</span>
+        <span class="n">text_pos_x</span> <span class="o">=</span> <span class="n">cell_width</span> <span class="o">*</span> <span class="n">col</span> <span class="o">+</span> <span class="n">swatch_width</span> <span class="o">+</span> <span class="mi">7</span>
+
+        <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">text_pos_x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span>
+                <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">'left'</span><span class="p">,</span>
+                <span class="n">verticalalignment</span><span class="o">=</span><span class="s1">'center'</span><span class="p">)</span>
+
+        <span class="n">ax</span><span class="o">.</span><span class="n">add_patch</span><span class="p">(</span>
+            <a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.Rectangle.html#matplotlib.patches.Rectangle" title="matplotlib.patches.Rectangle" class="sphx-glr-backref-module-matplotlib-patches sphx-glr-backref-type-py-class"><span class="n">Rectangle</span></a><span class="p">(</span><span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="n">swatch_start_x</span><span class="p">,</span> <span class="n">y</span><span class="o">-</span><span class="mi">9</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="n">swatch_width</span><span class="p">,</span>
+                      <span class="n">height</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">name</span><span class="p">],</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">'0.7'</span><span class="p">)</span>
+        <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">fig</span>
+</pre><button class="copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#codecell0">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <title>Copy to clipboard</title>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <rect x="8" y="8" width="12" height="12" rx="2"></rect>
+  <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2"></path>
+</svg>
+    </button></div>
+</div>
+</section>
+<section id="base-colors">
+<h2>Base colors<a class="headerlink" href="#base-colors" title="Link to this heading">#</a></h2>
+<div class="highlight-Python notranslate"><div class="highlight"><pre id="codecell1" tabindex="-1"><span></span><span class="n">plot_colortable</span><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">mcolors</span><span class="o">.</span><span class="n">BASE_COLORS</span></a><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">sort_colors</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre><button class="copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#codecell1">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <title>Copy to clipboard</title>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <rect x="8" y="8" width="12" height="12" rx="2"></rect>
+  <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2"></path>
+</svg>
+    </button></div>
+</div>
+<img src="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/sphx_glr_named_colors_001.webp" srcset="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/sphx_glr_named_colors_001.webp 1x, List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/sphx_glr_named_colors_001_2_00x.webp 2x" alt="named colors" class="sphx-glr-single-img"></section>
+<section id="tableau-palette">
+<h2>Tableau Palette<a class="headerlink" href="#tableau-palette" title="Link to this heading">#</a></h2>
+<div class="highlight-Python notranslate"><div class="highlight"><pre id="codecell2" tabindex="-1"><span></span><span class="n">plot_colortable</span><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">mcolors</span><span class="o">.</span><span class="n">TABLEAU_COLORS</span></a><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">sort_colors</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre><button class="copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#codecell2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <title>Copy to clipboard</title>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <rect x="8" y="8" width="12" height="12" rx="2"></rect>
+  <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2"></path>
+</svg>
+    </button></div>
+</div>
+<img src="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/sphx_glr_named_colors_002.webp" srcset="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/sphx_glr_named_colors_002.webp 1x, List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/sphx_glr_named_colors_002_2_00x.webp 2x" alt="named colors" class="sphx-glr-single-img"></section>
+<section id="css-colors">
+<h2>CSS Colors<a class="headerlink" href="#css-colors" title="Link to this heading">#</a></h2>
+<div class="highlight-Python notranslate"><div class="highlight"><pre id="codecell3" tabindex="-1"><span></span><span class="n">plot_colortable</span><span class="p">(</span><a href="https://docs.python.org/3/library/stdtypes.html#dict" title="builtins.dict" class="sphx-glr-backref-module-builtins sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">mcolors</span><span class="o">.</span><span class="n">CSS4_COLORS</span></a><span class="p">)</span>
+<a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html#matplotlib.pyplot.show" title="matplotlib.pyplot.show" class="sphx-glr-backref-module-matplotlib-pyplot sphx-glr-backref-type-py-function"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
+</pre><button class="copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#codecell3">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <title>Copy to clipboard</title>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <rect x="8" y="8" width="12" height="12" rx="2"></rect>
+  <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2"></path>
+</svg>
+    </button></div>
+</div>
+<img src="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/sphx_glr_named_colors_003.webp" srcset="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/sphx_glr_named_colors_003.webp 1x, List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/sphx_glr_named_colors_003_2_00x.webp 2x" alt="named colors" class="sphx-glr-single-img"></section>
+<section id="xkcd-colors">
+<h2>XKCD Colors<a class="headerlink" href="#xkcd-colors" title="Link to this heading">#</a></h2>
+<p>Matplotlib supports colors from the
+<a class="reference external" href="https://xkcd.com/color/rgb/">xkcd color survey</a>, e.g. <code class="docutils literal notranslate"><span class="pre">"xkcd:sky</span> <span class="pre">blue"</span></code>. Since
+this contains almost 1000 colors, a figure of this would be very large and is thus
+omitted here. You can use the following code to generate the overview yourself</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre id="codecell4" tabindex="-1"><span></span><span class="n">xkcd_fig</span> <span class="o">=</span> <span class="n">plot_colortable</span><span class="p">(</span><span class="n">mcolors</span><span class="o">.</span><span class="n">XKCD_COLORS</span><span class="p">)</span>
+<span class="n">xkcd_fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">"XKCD_Colors.png"</span><span class="p">)</span>
+</pre><button class="copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#codecell4">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <title>Copy to clipboard</title>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <rect x="8" y="8" width="12" height="12" rx="2"></rect>
+  <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2"></path>
+</svg>
+    </button></div>
+</div>
+<div class="admonition-references admonition">
+<p class="admonition-title">References</p>
+<p>The use of the following functions, methods, classes and modules is shown
+in this example:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="https://matplotlib.org/stable/api/colors_api.html#module-matplotlib.colors" title="matplotlib.colors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">matplotlib.colors</span></code></a></p></li>
+<li><p><a class="reference internal" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.rgb_to_hsv.html#matplotlib.colors.rgb_to_hsv" title="matplotlib.colors.rgb_to_hsv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">matplotlib.colors.rgb_to_hsv</span></code></a></p></li>
+<li><p><a class="reference internal" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.colors.to_rgba.html#matplotlib.colors.to_rgba" title="matplotlib.colors.to_rgba"><code class="xref py py-obj docutils literal notranslate"><span class="pre">matplotlib.colors.to_rgba</span></code></a></p></li>
+<li><p><a class="reference internal" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.get_size_inches.html#matplotlib.figure.Figure.get_size_inches" title="matplotlib.figure.Figure.get_size_inches"><code class="xref py py-obj docutils literal notranslate"><span class="pre">matplotlib.figure.Figure.get_size_inches</span></code></a></p></li>
+<li><p><a class="reference internal" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.figure.Figure.subplots_adjust.html#matplotlib.figure.Figure.subplots_adjust" title="matplotlib.figure.Figure.subplots_adjust"><code class="xref py py-obj docutils literal notranslate"><span class="pre">matplotlib.figure.Figure.subplots_adjust</span></code></a></p></li>
+<li><p><a class="reference internal" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.text.html#matplotlib.axes.Axes.text" title="matplotlib.axes.Axes.text"><code class="xref py py-obj docutils literal notranslate"><span class="pre">matplotlib.axes.Axes.text</span></code></a></p></li>
+<li><p><a class="reference internal" href="https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.Rectangle.html#matplotlib.patches.Rectangle" title="matplotlib.patches.Rectangle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">matplotlib.patches.Rectangle</span></code></a></p></li>
+</ul>
+</div>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 1.542 seconds)</p>
+<div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-gallery-color-named-colors-py">
+<div class="sphx-glr-download sphx-glr-download-jupyter docutils container">
+<p><a class="reference download internal" download="" href="https://matplotlib.org/stable/_downloads/bad4569afffc59fab7369853eda950d9/named_colors.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">named_colors.ipynb</span></code></a></p>
+</div>
+<div class="sphx-glr-download sphx-glr-download-python docutils container">
+<p><a class="reference download internal" download="" href="https://matplotlib.org/stable/_downloads/861cf0b07b083f3c44ddd625a0e99000/named_colors.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">named_colors.py</span></code></a></p>
+</div>
+<div class="sphx-glr-download sphx-glr-download-zip docutils container">
+<p><a class="reference download internal" download="" href="https://matplotlib.org/stable/_downloads/93afd368b21efcbac3b47023e40fffc9/named_colors.zip"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">zipped:</span> <span class="pre">named_colors.zip</span></code></a></p>
+</div>
+</div>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io/">Gallery generated by Sphinx-Gallery</a></p>
+</section>
+</section>
+</article>
+</div>
+<div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+<div class="sidebar-secondary-item">
+<div id="pst-page-navigation-heading-2" class="page-toc tocsection onthispage">
+<svg class="svg-inline--fa fa-list" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z"></path></svg><!-- <i class="fa-solid fa-list"></i> Font Awesome fontawesome.com --> On this page
+</div>
+<nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#helper-function-for-plotting">Helper Function for Plotting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#base-colors">Base colors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tableau-palette">Tableau Palette</a></li>
+<li class="toc-h2 nav-item toc-entry active"><a class="reference internal nav-link active" href="#css-colors">CSS Colors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#xkcd-colors">XKCD Colors</a></li>
+</ul>
+</nav></div>
+</div></div>
+</div>
+<footer class="bd-footer-content">
+</footer>
+</main>
+</div>
+</div>
+
+<script src="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/bootstrap.js" type="text/javascript"></script>
+<script src="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/pydata-sphinx-theme.js" type="text/javascript"></script>
+<footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+<div class="footer-items__start">
+<div class="footer-item">
+<p class="copyright">
+© Copyright 2002–2012 John Hunter, Darren Dale, Eric Firing, Michael 
+Droettboom and the Matplotlib development team; 2012–2024 The Matplotlib
+ development team.
+<br>
+</p>
+</div>
+<div class="footer-item">
+<p class="sphinx-version">
+Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.0.2.
+<br>
+</p>
+</div>
+<div class="footer-item">
+<p class="sphinx-version">
+Built from v3.9.2-3-gd04b2f64fe.
+<br>
+</p>
+</div>
+</div>
+<div class="footer-items__end">
+<div class="footer-item">
+<p class="theme-version">
+Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.4.
+</p></div>
+</div>
+</div>
+</footer>
+<script defer="defer" src="List%20of%20named%20colors%20%E2%80%94%20Matplotlib%203.9.2%20documentation_arquivos/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;8baed48c486ea496&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfL4&quot;:true}},&quot;version&quot;:&quot;2024.8.0&quot;,&quot;token&quot;:&quot;0175964edbd040b6ac0bff692bcb22ec&quot;}" crossorigin="anonymous"></script>
+
+</body></html>
